@@ -1,0 +1,348 @@
+body{
+    font-family: arial, sans-serif;
+    text-align: center;
+    background: #cbd9eb;
+    color: #0a1b2e;
+}
+
+section{
+    margin: 0 auto 20px;
+    border-radius: 15px;
+    padding: 15px;
+    background: #0a1b2e; 
+    text-align: center;
+    width: 620px;
+    height: fit-content;
+    border: 1px solid #0a1b2e;
+    color: white;
+}
+
+.left{
+    text-align: left;
+}
+
+.big{
+    width: 560px;
+    height: 290px;
+}
+
+.small, iframe{
+    width: 250px;
+    height: 140px;
+}
+
+.district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 0 auto 10px;
+    padding: 8px;
+    
+}
+
+.ac-container a{
+    color: #315b8a;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 4px;
+}
+
+.ac-container a:hover{
+    color: #0a1b2e;
+}
+
+.cover, .cover1{
+    border: 1px solid #0a1b2e;
+    padding: 8px;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    background: #cbd9eb;
+    color: #0a1b2e;
+}
+
+.fc-box, .experience-box, .place-box, .ac-box, .ac-box1, .guide-box{
+    border: 1px solid #0a1b2e;
+    padding: 8px;
+    border-radius: 15px;
+    color: #0a1b2e;
+    background: #dce3ec;
+}
+
+.district-box{
+    border: 1px solid #0a1b2e;
+    margin: 0;
+    padding: 8px;
+    border-radius: 15px;
+    color: #0a1b2e;
+    background: #dce3ec;
+}
+
+.sens{
+    border-radius: 15px;
+    padding: 8px;
+    border: 1px solid #0a1b2e;
+    height: fit-content;
+    background: #cbd9eb;
+    color: #0a1b2e;
+
+}
+
+.navbar{
+    margin: 20px auto;
+    width: 490px;
+}
+
+.navlinks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    border: 1px solid #0a1b2e;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    background: #0a1b2e;
+    color: white;
+}
+
+.navlinks a:hover{
+    background: #294766;
+}
+
+h5{
+    font-size: 16px;
+    font-family: arial;
+}
+
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 8px;
+}
+
+h3, h5{
+    text-align: left;
+    margin: 0 auto 5px;
+    margin-top: 8px;
+}
+
+h4{
+    text-align: center;
+    margin: 8px;
+}
+
+p{
+    margin: 0 auto 5px;
+    font-size: 15px;
+}
+
+.next-btn, .back-btn{
+    display: inline-block;
+    background: #0a1b2e;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 10px 0;
+    margin-bottom: 25px;
+}
+
+.next-btn:hover, .back-btn:hover{
+    background: #294766;
+}
+
+img, iframe{
+    border: 1px solid #0a1b2e;
+    border-radius: 15px;
+    margin: 0 auto 7px;
+}
+
+footer{
+    padding: 18px;
+    color: #dce3ec;
+    background: #0a1b2e;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.theme-btn{
+    background: #0a1b2e;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 14px;
+
+}
+
+.theme-btn:hover{
+    background: #294766;
+}
+
+/* DARK MODE COLOURS */
+
+body.dark-mode{
+    background: #0b1926;
+    color: #eaf2f8;
+}
+
+body.dark-mode section{
+    background: #172d40;
+    color: white;
+    border-color: #49677f;
+}
+
+body.dark-mode .cover,
+body.dark-mode .cover1,
+body.dark-mode .sens{
+    background: #23445c;
+    color: white;
+    border-color: #49677f;
+}
+
+body.dark-mode .fc-box,
+body.dark-mode .experience-box,
+body.dark-mode .place-box,
+body.dark-mode .ac-box,
+body.dark-mode .ac-box1,
+body.dark-mode .guide-box,
+body.dark-mode .district-box{
+    background: #315873;
+    color: white;
+    border-color: #58758C;
+}
+
+body.dark-mode .navlinks a{
+    background: #23445c;
+    color: white;
+    border-color: #49677f;
+}
+
+body.dark-mode .navlinks a:hover{
+    background: #315873;
+}
+
+body.dark-mode .ac-container a{
+    color: #b8d5ea;
+}
+
+body.dark-mode .ac-container a:hover{
+    color: white;
+}
+
+body.dark-mode img,
+body.dark-mode iframe{
+    border-color: #58758c;
+}
+
+body.dark-mode footer{
+    background: #07121c;
+    color: #eaf2f8;
+}
+
+/* DARK MODE BUTTONS */
+
+body.dark-mode .theme-btn,
+body.dark-mode .next-btn,
+body.dark-mode .back-btn{
+    background: #315873;
+    color: white;
+}
+
+body.dark-mode .theme-btn:hover,
+body.dark-mode .next-btn:hover,
+body.dark-mode .back-btn:hover{
+    background: #496f8a;
+}
+
+/* 2. IMAGE ENLARGEMENT / ZOOM */
+
+main img{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+main img:hover{
+    transform: scale(1.03);
+}
+
+.image-box{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box.show{
+    display: flex;
+}
+
+.enlarged-image{
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #cbd9eb;
+    color: #0a1b2e;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* 3. BACK-TO-TOP BUTTON */
+
+.top-btn{
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #0a1b2e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.top-btn.show{
+    display: block;
+}
+
+.top-btn:hover{
+    background: #294766;
+}
+
+body.dark-mode .top-btn{
+    background: #cbd9eb;
+    color: #0a1b2e;
+}
+
+body.dark-mode .top-btn:hover{
+    background: #dce3ec;
+}
