@@ -23,7 +23,7 @@ themeButton.addEventListener("click", function(){
     }
 })
 
-//2. image inlargement / zoom
+//2. image enlarge/zoom
 const images = document.querySelectorAll("main img");
 
 const imageBox = document.createElement("div");
