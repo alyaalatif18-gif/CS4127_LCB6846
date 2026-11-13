@@ -18,12 +18,10 @@ section{
 }
 
 @media screen and (max-width: 600px){
-    main{
+    .site-header p{
+        font-size: 16px;
+        line-height: 1.5;
         padding: 0 10px;
-    }
-    section{
-        margin: 20px 0;
-        padding: 15px;
     }
 }
 
