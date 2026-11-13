@@ -44,12 +44,12 @@ section{
     height: 140px;
 }
 
-iframe{
+.ac-box iframe{
     width: 100%;
     height: 200px;
     display: block;
+    margin: 0 auto 7px;
     box-sizing: border-box;
-    border: none;
 }
 
 .district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
@@ -294,7 +294,7 @@ body.dark-mode iframe{
 }
 
 body.dark-mode footer{
-    background: #07121c;
+    background: #23445c;
     color: #eaf2f8;
 }
 
