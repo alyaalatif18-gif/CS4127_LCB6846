@@ -442,7 +442,7 @@ body.dark-mode .top-btn:hover{
     }
 
     .theme-btn{
-        width: 570px;
+        width: 560px;
         height: 50px;
         box-sizing: border-box;
         padding: 12px;
@@ -458,8 +458,8 @@ body.dark-mode .top-btn:hover{
 
     .top-btn{
         font-size: 28px;
-        width: 130px;
-        height: 80px;
+        width: 75px;
+        height: 130px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
