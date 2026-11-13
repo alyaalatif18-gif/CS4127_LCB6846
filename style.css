@@ -394,9 +394,8 @@ body.dark-mode .top-btn:hover{
     .theme-btn{
         width: 540px;
         box-sizing: border-box;
-        padding: 12px 20px;
+        padding: 12px;
         font-size: 16px;
-        margin-bottom: 15px;
     }
         
     .next-btn, .back-btn{
