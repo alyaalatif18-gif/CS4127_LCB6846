@@ -38,58 +38,45 @@ themeButton.addEventListener("click", function(){
 });
 
 
-// 2. IMAGE ENLARGEMENT / ZOOM
-
+//2. image enlargement / zoom
 const images = document.querySelectorAll("main img");
 
 const imageBox = document.createElement("div");
-
 imageBox.className = "image-box";
 
-const enlargedImage = document.createElement("img");
+const imageWrapper = document.createElement("div");
+imageWrapper.className = "image-wrapper";
 
+const enlargedImage = document.createElement("img");
 enlargedImage.className = "enlarged-image";
 
 const closeButton = document.createElement("button");
-
 closeButton.textContent = "x";
-
 closeButton.className = "close-btn";
 
-imageBox.appendChild(closeButton);
+imageWrapper.appendChild(closeButton);
+imageWrapper.appendChild(enlargedImage);
 
-imageBox.appendChild(enlargedImage);
+imageBox.appendChild(imageWrapper);
 
 document.body.appendChild(imageBox);
 
 images.forEach(function(image){
-
     image.addEventListener("click", function(){
-
         enlargedImage.src = image.src;
-
         imageBox.classList.add("show");
-
     });
-
 });
 
 closeButton.addEventListener("click", function(){
-
     imageBox.classList.remove("show");
-
 });
 
 imageBox.addEventListener("click", function(event){
-
     if(event.target === imageBox){
-
         imageBox.classList.remove("show");
-
     }
-
 });
-
 
 // 3. BACK-TO-TOP BUTTON
 
