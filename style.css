@@ -17,6 +17,16 @@ section{
     color: white;
 }
 
+@media screen and (max-width: 600px){
+    main{
+        padding: 0 10px;
+    }
+    section{
+        margin: 20px 0;
+        padding: 15px;
+    }
+}
+
 .left{
     text-align: left;
 }
