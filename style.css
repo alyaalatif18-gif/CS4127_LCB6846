@@ -347,3 +347,22 @@ body.dark-mode .top-btn:hover{
     background: #dce3ec;
 }
 
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+        min-width: 700px;
+        zoom: 0.5;
+    }
+
+    section{
+        width: 620px;
+    }
+
+    .navbar{
+        width: 490px;
+    }
+
+    .navlinks{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
