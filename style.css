@@ -199,13 +199,15 @@ footer{
 
 /* DARK MODE COLOURS */
 
-body.dark-mode .theme-btn, body.dark-mode .next-btn, body.dark-mode .back-btn{
-    background: #315873;
-    color: white;
+body.dark-mode{
+    background: #0b1926;
+    color: #eaf2f8;
 }
 
-body.dark-mode .theme-btn:hover, body.dark-mode .next-btn:hover, body.dark-mode .back-btn:hover{
-    background: #496f8a;
+body.dark-mode section{
+    background: #172d40;
+    color: white;
+    border-color: #49677f;
 }
 
 body.dark-mode .cover,
@@ -367,12 +369,13 @@ body.dark-mode .top-btn:hover{
     }
 
     .navbar{
-        width: 490px;
+        width: 95%;
+        margin: 20px auto;
     }
 
     .navlinks{
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 8px;
     }
 
     .navlinks a{
@@ -385,8 +388,11 @@ body.dark-mode .top-btn:hover{
     }
 
     .theme-btn{
+        display: inline-block;
+        width: auto;
         padding: 12px 20px;
         border-radius: 10px;
+        font-size: 16px;
     }
     
     .top-btn{
@@ -397,8 +403,10 @@ body.dark-mode .top-btn:hover{
     }
     
     footer{
+        width: 100%;
         padding: 25px 15px;
         font-size: 15px;
+        margin-top: auto;
     }
     
     h3{
