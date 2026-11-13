@@ -315,6 +315,8 @@ body.dark-mode .back-btn:hover{
 
 /* 2. IMAGE ENLARGEMENT / ZOOM */
 
+/* 2. IMAGE ENLARGEMENT / ZOOM */
+
 main img{
     cursor: pointer;
     transition: transform 0.3s ease;
