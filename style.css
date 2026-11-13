@@ -149,23 +149,33 @@ p{
     font-size: 15px;
 }
 
-.next-btn, .back-btn, .theme-btn{
+.next-btn, .back-btn{
     display: inline-block;
     background: #0a1b2e;
     color: white;
-    border: 1px solid #0a1b2e;
-    padding: 14px 20px;
+    padding: 12px 28px;
     border-radius: 12px;
     text-decoration: none;
     margin: 10px 0;
     margin-bottom: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
 }
 
-.next-btn:hover, .back-btn:hover, .theme-btn:hover{
+.next-btn:hover, .back-btn:hover{
+    background: #294766;
+}
+
+.theme-btn{
+    background: #0a1b2e;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.theme-btn:hover{
     background: #294766;
 }
 
@@ -190,13 +200,12 @@ footer{
 /* DARK MODE COLOURS */
 
 body.dark-mode .theme-btn, body.dark-mode .next-btn, body.dark-mode .back-btn{
-    background: #23445c;
+    background: #315873;
     color: white;
-    border-color: #49677f;
 }
 
 body.dark-mode .theme-btn:hover, body.dark-mode .next-btn:hover, body.dark-mode .back-btn:hover{
-    background: #315873;
+    background: #496f8a;
 }
 
 body.dark-mode .cover,
