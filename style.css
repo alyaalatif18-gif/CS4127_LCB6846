@@ -369,13 +369,12 @@ body.dark-mode .top-btn:hover{
     }
 
     .navbar{
-        width: 95%;
-        margin: 20px auto;
+        width: 490px;
     }
 
     .navlinks{
         grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 10px;
     }
 
     .navlinks a{
