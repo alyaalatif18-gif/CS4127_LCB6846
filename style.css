@@ -414,3 +414,8 @@ body.dark-mode .top-btn:hover{
         
 }
 
+body.dark-mode .theme-btn, body.dark-mode .next-btn, body.dark-mode .back-btn{
+    background: #315873;
+    color: white;
+    border-color: 49677f;
+}
