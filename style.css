@@ -1,8 +1,19 @@
+html, body{
+    min-height: 100%;
+}
+
 body{
     font-family: arial, sans-serif;
     text-align: center;
     background: #cbd9eb;
     color: #0a1b2e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
 }
 
 section{
@@ -400,3 +411,4 @@ body.dark-mode .top-btn:hover{
     }
         
 }
+
