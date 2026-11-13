@@ -359,13 +359,38 @@ body.dark-mode .top-btn:hover{
     }
 
     .navbar{
-        width: 490px;
+        width: 95%;
+        margin: 20px auto;
     }
 
     .navlinks{
         grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
     }
 
+    .navlinks a{
+        font-size: 16px;
+        padding: 14px 5px;
+    }
+    .next-btn, .back-btn{
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    .top-btn{
+        font-size: 28px;
+        padding: 16px 22px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    footer{
+        width: 100%;
+        padding: 25px 15px;
+        font-size: 15px;
+        margin-top: auto;
+    }
+    
     h3{
         font-family: Arial;
     }
