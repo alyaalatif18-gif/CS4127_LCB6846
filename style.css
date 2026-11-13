@@ -1,3 +1,4 @@
+
 html, body{
     min-height: 100%;
     margin: 0;
@@ -18,13 +19,14 @@ main{
 }
 
 section{
-    margin: 0 auto 20px;
+    margin: 10px auto 20px;
     border-radius: 15px;
     padding: 15px;
-    background: #0a1b2e; 
+    background: #0a1b2e;
     text-align: center;
     width: 620px;
     height: fit-content;
+    box-sizing: border-box;
     border: 1px solid #0a1b2e;
     color: white;
 }
@@ -45,11 +47,11 @@ section{
 
 .district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px;
     margin: 0 auto 10px;
     padding: 8px;
-    
+    box-sizing: border-box;
 }
 
 .ac-container a{
@@ -96,11 +98,12 @@ section{
     height: fit-content;
     background: #cbd9eb;
     color: #0a1b2e;
-
 }
 
+/* NAVIGATION */
+
 .navbar{
-    margin: 20px auto;
+    margin: 10px auto 0;
     width: 490px;
 }
 
@@ -123,6 +126,8 @@ section{
 .navlinks a:hover{
     background: #294766;
 }
+
+/* HEADINGS AND TEXT */
 
 h5{
     font-size: 16px;
@@ -150,19 +155,26 @@ p{
     font-size: 15px;
 }
 
+/* NEXT AND BACK BUTTONS */
+
 .next-btn, .back-btn{
     display: inline-block;
     background: #0a1b2e;
     color: white;
-    padding: 12px 28px;
+    width: calc((490px - 20px) / 3);
+    box-sizing: border-box;
+    padding: 10px;
     border-radius: 12px;
     text-decoration: none;
+    text-align: center;
     margin: 10px 0 15px;
 }
 
 .next-btn:hover, .back-btn:hover{
     background: #294766;
 }
+
+/* DARK AND LIGHT MODE BUTTON */
 
 .theme-btn{
     display: inline-block;
@@ -174,13 +186,15 @@ p{
     padding: 10px;
     border-radius: 12px;
     cursor: pointer;
-    margin: 10px auto 15px;
+    margin: 10px auto;
     font-size: 16px;
 }
 
 .theme-btn:hover{
     background: #294766;
 }
+
+/* IMAGES */
 
 img, iframe{
     border: 1px solid #0a1b2e;
@@ -193,6 +207,8 @@ footer{
     color: #dce3ec;
     background: #0a1b2e;
 }
+
+/* BUTTON CONTAINER */
 
 .button-container{
     display: flex;
@@ -273,12 +289,14 @@ body.dark-mode .theme-btn:hover{
     background: #315873;
 }
 
-body.dark-mode .next-btn, body.dark-mode .back-btn{
+body.dark-mode .next-btn, 
+body.dark-mode .back-btn{
     background: #315873;
     color: white;
 }
 
-body.dark-mode .next-btn:hover, body.dark-mode .back-btn:hover{
+body.dark-mode .next-btn:hover, 
+body.dark-mode .back-btn:hover{
     background: #496f8a;
 }
 
@@ -310,25 +328,36 @@ main img:hover{
     display: flex;
 }
 
-.enlarged-image{
+/* IMAGE WRAPPER AND CLOSE BUTTON */
+
+.image-wrapper{
+    position: relative;
+    display: inline-block;
     max-width: 90%;
     max-height: 85%;
+}
+
+.enlarged-image{
+    display: block;
+    max-width: 100%;
+    max-height: 85vh;
     object-fit: contain;
     border-radius: 10px;
 }
 
 .close-btn{
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 8px;
+    right: 8px;
     background: #cbd9eb;
     color: #0a1b2e;
     border: none;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 25px;
     width: 40px;
     height: 40px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 /* 3. BACK-TO-TOP BUTTON */
@@ -342,7 +371,10 @@ main img:hover{
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 12px 18px;
+    width: 150px;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 5px 15px;
     font-size: 22px;
     font-family: Arial, sans-serif;
     cursor: pointer;
@@ -366,7 +398,10 @@ body.dark-mode .top-btn:hover{
     background: #dce3ec;
 }
 
-    @media screen and (max-width: 600px){
+/* MOBILE VIEW */
+
+@media screen and (max-width: 600px){
+
     body{
         width: 100%;
         min-width: 700px;
@@ -397,35 +432,25 @@ body.dark-mode .top-btn:hover{
         padding: 12px;
         font-size: 16px;
     }
-        
-    .next-btn, .back-btn{
-        font-size: 18px;
-        padding: 15px 32px;
-    }
-    
+
     .top-btn{
-        font-size: 28px;
-        width: 130px;
-        height: 80px;
-        box-sizing: border-box;
-        padding: 5px 15px;
+        font-size: 24px;
         right: 15px;
         bottom: 15px;
     }
-    
+
     footer{
+        box-sizing: border-box;
         width: 100%;
         padding: 25px 15px;
         font-size: 15px;
     }
-    
+
     h3{
         font-family: Arial;
     }
-    
+
     p{
         font-size: 16px;
     }
-        
 }
-
