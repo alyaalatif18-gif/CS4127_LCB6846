@@ -1,5 +1,6 @@
 html, body{
     min-height: 100%;
+    margin: 0;
 }
 
 body{
@@ -13,7 +14,7 @@ body{
 }
 
 main{
-    flex: 1;
+    flex: 0 0 auto;
 }
 
 section{
@@ -156,8 +157,7 @@ p{
     padding: 12px 28px;
     border-radius: 12px;
     text-decoration: none;
-    margin: 10px 0;
-    margin-bottom: 25px;
+    margin: 10px 0 15px;
 }
 
 .next-btn:hover, .back-btn:hover{
@@ -274,7 +274,7 @@ body.dark-mode .theme-btn:hover{
 }
 
 body.dark-mode .next-btn, body.dark-mode .back-btn{
-    background: #3158873;
+    background: #315873;
     color: white;
 }
 
@@ -366,7 +366,6 @@ body.dark-mode .top-btn:hover{
     background: #dce3ec;
 }
 
-@media screen and (max-width: 600px){
     @media screen and (max-width: 600px){
     body{
         width: 100%;
@@ -399,8 +398,8 @@ body.dark-mode .top-btn:hover{
     
     .top-btn{
         font-size: 28px;
-        width: 100px;
-        height: 70px;
+        width: 70px;
+        height: 110px;
         padding: 10px 20px;
         right: 15px;
         bottom: 15px;
@@ -410,7 +409,6 @@ body.dark-mode .top-btn:hover{
         width: 100%;
         padding: 25px 15px;
         font-size: 15px;
-        margin-top: auto;
     }
     
     h3{
