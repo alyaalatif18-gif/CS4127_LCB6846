@@ -1,4 +1,3 @@
-
 html, body{
     min-height: 100%;
     margin: 0;
@@ -386,8 +385,8 @@ main img:hover{
     color: white;
     border: none;
     border-radius: 10px;
-    width: 150px;
-    height: 55px;
+    width: 55px;
+    height: 150px;
     box-sizing: border-box;
     padding: 5px 15px;
     font-size: 22px;
@@ -443,7 +442,7 @@ body.dark-mode .top-btn:hover{
     }
 
     .theme-btn{
-        width: 540px;
+        width: 570px;
         height: 50px;
         box-sizing: border-box;
         padding: 12px;
