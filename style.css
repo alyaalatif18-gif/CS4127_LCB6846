@@ -367,6 +367,7 @@ body.dark-mode .top-btn:hover{
 }
 
 @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px){
     body{
         width: 100%;
         min-width: 700px;
@@ -390,6 +391,7 @@ body.dark-mode .top-btn:hover{
         font-size: 17px;
         padding: 14px 8px;
     }
+
     .next-btn, .back-btn{
         font-size: 18px;
         padding: 15px 32px;
@@ -397,7 +399,9 @@ body.dark-mode .top-btn:hover{
     
     .top-btn{
         font-size: 28px;
-        padding: 16px 22px;
+        width: 90px;
+        height: 60px;
+        padding: 10px 20px;
         right: 15px;
         bottom: 15px;
     }
