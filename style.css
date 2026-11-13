@@ -519,3 +519,13 @@ body.dark-mode .top-btn:hover{
         font-size: 16px;
     }
 }
+
+@media (hover: hover) and (pointer: fine){
+    .theme-btn:hover{
+        background: #294766;
+    }
+
+    body.dark-mode .theme-btn:hover{
+        background: #315873;
+    }
+}
