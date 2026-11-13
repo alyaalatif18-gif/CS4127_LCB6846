@@ -395,6 +395,14 @@ body.dark-mode .top-btn:hover{
         bottom: 15px;
     }
 
+    .theme-btn{
+        display: inline-block;
+        width: auto;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    
     footer{
         width: 100%;
         padding: 25px 15px;
