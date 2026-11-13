@@ -165,14 +165,17 @@ p{
 }
 
 .theme-btn{
+    display: inline-block;
+    align-self: center;
+    width: fit-content;
     background: #0a1b2e;
     color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 10px;
+    border: 1px solid #0a1b2e;
+    padding: 10px;
+    border-radius: 12px;
     cursor: pointer;
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin: 10px auto 15px;
+    font-size: 16px;
 }
 
 .theme-btn:hover{
@@ -260,16 +263,22 @@ body.dark-mode footer{
 
 /* DARK MODE BUTTONS */
 
-body.dark-mode .theme-btn,
-body.dark-mode .next-btn,
-body.dark-mode .back-btn{
+body.dark-mode .theme-btn{
+    background: #23445c;
+    color: white;
+    border: 1px solid #49677f;
+}
+
+body.dark-mode .theme-btn:hover{
     background: #315873;
+}
+
+body.dark-mode .next-btn, body.dark-mode .back-btn{
+    background: #3158873;
     color: white;
 }
 
-body.dark-mode .theme-btn:hover,
-body.dark-mode .next-btn:hover,
-body.dark-mode .back-btn:hover{
+body.dark-mode .next-btn:hover, body.dark-mode .back-btn:hover{
     background: #496f8a;
 }
 
@@ -384,14 +393,6 @@ body.dark-mode .top-btn:hover{
     .next-btn, .back-btn{
         font-size: 18px;
         padding: 15px 32px;
-    }
-
-    .theme-btn{
-        display: inline-block;
-        width: auto;
-        padding: 12px 20px;
-        border-radius: 10px;
-        font-size: 16px;
     }
     
     .top-btn{
