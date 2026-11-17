@@ -45,10 +45,10 @@ section{
 }
 
 .ac-box iframe{
-    width: 100%;
+    width: calc(100% + 16px);
     height: 200px;
     display: block;
-    margin: 0 auto 7px;
+    margin: 0 -8px 7px;
     box-sizing: border-box;
 }
 
@@ -170,7 +170,7 @@ p{
 /* NEXT AND BACK BUTTONS */
 
 .next-btn, .back-btn{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #0a1b2e;
@@ -182,7 +182,7 @@ p{
     border-radius: 12px;
     text-decoration: none;
     text-align: center;
-    margin: 10px 0 15px;
+    margin: 10px auto 15px;
 }
 
 .next-btn:hover, .back-btn:hover{
