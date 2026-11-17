@@ -207,6 +207,10 @@ p{
     font-size: 16px;
 }
 
+.theme-btn:hover{
+    background: #294766;
+}
+
 /* IMAGES */
 
 img, iframe{
@@ -300,6 +304,10 @@ body.dark-mode .theme-btn{
     background: #23445c;
     color: white;
     border: 1px solid #49677f;
+}
+
+body.dark-mode .theme-btn:hover{
+    background: #315873;
 }
 
 body.dark-mode .next-btn,
