@@ -1,523 +1,106 @@
-html, body{
-    min-height: 100%;
-    margin: 0;
-}
-
-body{
-    font-family: arial, sans-serif;
-    text-align: center;
-    background: #cbd9eb;
-    color: #0a1b2e;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-main{
-    flex: 1 0 auto;
-}
-
-section{
-    margin: 10px auto 20px;
-    border-radius: 15px;
-    padding: 15px;
-    background: #0a1b2e;
-    text-align: center;
-    width: 620px;
-    height: fit-content;
-    box-sizing: border-box;
-    border: 1px solid #0a1b2e;
-    color: white;
-}
-
-.left{
-    text-align: left;
-}
-
-.big{
-    width: 560px;
-    height: 290px;
-}
-
-.small{
-    width: 250px;
-    height: 140px;
-}
-
-.ac-box iframe{
-    width: calc(100% + 16px);
-    height: 200px;
-    display: block;
-    margin: 0 -8px 7px;
-    box-sizing: border-box;
-}
-
-.district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-    margin: 0 auto 10px;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.ac-container a{
-    color: #315b8a;
-    font-weight: bold;
-    text-decoration: underline;
-    margin: 0 4px;
-}
-
-.ac-container a:hover{
-    color: #0a1b2e;
-}
-
-.cover, .cover1{
-    border: 1px solid #0a1b2e;
-    padding: 8px;
-    border-radius: 15px;
-    margin: 0 auto 20px;
-    background: #cbd9eb;
-    color: #0a1b2e;
-}
-
-.fc-box, .experience-box, .place-box, .ac-box, .ac-box1, .guide-box{
-    border: 1px solid #0a1b2e;
-    padding: 8px;
-    border-radius: 15px;
-    color: #0a1b2e;
-    background: #dce3ec;
-}
-
-.district-box{
-    border: 1px solid #0a1b2e;
-    margin: 0;
-    padding: 8px;
-    border-radius: 15px;
-    color: #0a1b2e;
-    background: #dce3ec;
-}
-
-.sens{
-    border-radius: 15px;
-    padding: 8px;
-    border: 1px solid #0a1b2e;
-    height: fit-content;
-    background: #cbd9eb;
-    color: #0a1b2e;
-}
-
-/* NAVIGATION */
-
-.navbar{
-    margin: 10px auto;
-    width: 490px;
-}
-
-.navlinks{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.navlinks a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border: 1px solid #0a1b2e;
-    border-radius: 12px;
-    padding: 10px;
-    height: 42px;
-    box-sizing: border-box;
-    text-align: center;
-    background: #0a1b2e;
-    color: white;
-}
-
-.navlinks a:hover{
-    background: #294766;
-}
-
-/* HEADINGS AND TEXT */
-
-h5{
-    font-size: 16px;
-    font-family: arial;
-}
-
-h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 8px;
-}
-
-h3, h5{
-    text-align: left;
-    margin: 0 auto 5px;
-    margin-top: 8px;
-}
-
-h4{
-    text-align: center;
-    margin: 8px;
-}
-
-p{
-    margin: 0 auto 5px;
-    font-size: 15px;
-}
-
-/* NEXT AND BACK BUTTONS */
-
-.next-btn, .back-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #0a1b2e;
-    color: white;
-    width: calc((490px - 20px) / 3);
-    height: 42px;
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 12px;
-    text-decoration: none;
-    text-align: center;
-    margin: 10px auto 15px;
-}
-
-.next-btn:hover, .back-btn:hover{
-    background: #294766;
-}
-
-/* DARK AND LIGHT MODE BUTTON */
-
-.theme-btn{
-    display: inline-block;
-    align-self: center;
-    width: fit-content;
-    height: 42px;
-    box-sizing: border-box;
-    background: #0a1b2e;
-    color: white;
-    border: 1px solid #0a1b2e;
-    padding: 10px;
-    border-radius: 12px;
-    cursor: pointer;
-    margin: 10px auto;
-    font-size: 16px;
-}
-
-/* IMAGES */
-
-img, iframe{
-    border: 1px solid #0a1b2e;
-    border-radius: 15px;
-    margin: 0 auto 7px;
-}
-
-footer{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 18px;
-    margin: 0;
-    color: #dce3ec;
-    background: #0a1b2e;
-}
-
-/* BUTTON CONTAINER */
-
-.button-container{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin: 10px auto 30px;
-}
-
-/* DARK MODE COLOURS */
-
-body.dark-mode{
-    background: #0b1926;
-    color: #eaf2f8;
-}
-
-body.dark-mode section{
-    background: #172d40;
-    color: white;
-    border-color: #49677f;
-}
-
-body.dark-mode .cover,
-body.dark-mode .cover1,
-body.dark-mode .sens{
-    background: #23445c;
-    color: white;
-    border-color: #49677f;
-}
-
-body.dark-mode .fc-box,
-body.dark-mode .experience-box,
-body.dark-mode .place-box,
-body.dark-mode .ac-box,
-body.dark-mode .ac-box1,
-body.dark-mode .guide-box,
-body.dark-mode .district-box{
-    background: #315873;
-    color: white;
-    border-color: #58758C;
-}
-
-body.dark-mode .navlinks a{
-    background: #23445c;
-    color: white;
-    border-color: #49677f;
-}
-
-body.dark-mode .navlinks a:hover{
-    background: #315873;
-}
-
-body.dark-mode .ac-container a{
-    color: #b8d5ea;
-}
-
-body.dark-mode .ac-container a:hover{
-    color: white;
-}
-
-body.dark-mode img,
-body.dark-mode iframe{
-    border-color: #58758c;
-}
-
-body.dark-mode footer{
-    background: #23445c;
-    color: #eaf2f8;
-}
-
-/* DARK MODE BUTTONS */
-
-body.dark-mode .theme-btn{
-    background: #23445c;
-    color: white;
-    border: 1px solid #49677f;
-}
-
-body.dark-mode .next-btn,
-body.dark-mode .back-btn{
-    background: #315873;
-    color: white;
-}
-
-body.dark-mode .next-btn:hover,
-body.dark-mode .back-btn:hover{
-    background: #496f8a;
-}
-
-/* 2. IMAGE ENLARGEMENT / ZOOM */
-
-main img{
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-main img:hover{
-    transform: scale(1.03);
-}
-
-.image-box{
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    justify-content: center;
-    align-items: center;
-}
-
-.image-box.show{
-    display: flex;
-}
-
-/* IMAGE WRAPPER AND CLOSE BUTTON */
-.image-wrapper{
-    position: relative;
-    display: inline-block;
-    width: 90%;
-    max-width: 90%;
-    max-height: 90vh;
-}
-
-.enlarged-image{
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    max-height: 85vh;
-    height: auto;
-    object-fit: contain;
-    margin: 0;
-}
-
-.close-btn{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background: #cbd9eb;
-    color: #0a1b2e;
-    border: none;
-    border-radius: 50%;
-    font-size: 25px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-/* 3. BACK-TO-TOP BUTTON */
-
-.top-btn{
-    display: none;
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #0a1b2e;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    width: 55px;
-    height: 85px;
-    box-sizing: border-box;
-    padding: 5px 15px;
-    font-size: 22px;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-    z-index: 999;
-}
-
-.top-btn.show{
-    display: block;
-}
-
-.top-btn:hover{
-    background: #294766;
-}
-
-body.dark-mode .top-btn{
-    background: #cbd9eb;
-    color: #0a1b2e;
-}
-
-body.dark-mode .top-btn:hover{
-    background: #dce3ec;
-}
-
-/* MOBILE VIEW */
-
-@media screen and (max-width: 600px){
-
-    body{
-        width: 100%;
-        min-width: 700px;
-        zoom: 0.60;
-    }
-
-    section{
-        width: 620px;
-    }
-
-    .navbar{
-        width: 490px;
-    }
-
-    .navlinks{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-    .navlinks a{
-        height: 50px;
-        font-size: 17px;
-        padding: 14px 8px;
-    }
-
-    .theme-btn{
-        width: 560px;
-        height: 50px;
-        box-sizing: border-box;
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .next-btn, .back-btn{
-        height: 50px;
-        width: calc((490px - 20px) / 3);
-    }
-
-    /* BACK-TO-TOP BUTTON - MOBILE */
-
-    .top-btn{
-        font-size: 28px;
-        width: 75px;
-        height: 90px;
-        box-sizing: border-box;
-        padding: 5px 15px;
-        right: 15px;
-        bottom: 15px;
-    }
-
-    /* IMAGE CLOSE BUTTON - MOBILE */
-
-    .image-wrapper{
-        position: relative;
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        max-width: 90vw;
-        max-height: 85vh;
-    }
-
-    .enlarged-image{
-        display: block;
-        max-width: 90vw;
-        max-height: 85vh;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        margin: 0;
-    }
-
-    .close-btn{
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        z-index: 1001;
-    }
-
-    footer{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 25px 15px;
-        margin: 0;
-        font-size: 15px;
-    }
-
-    h3{
-        font-family: Arial;
-    }
-
-    p{
-        font-size: 16px;
-    }
-}
-
-@media (hover: hover) and (pointer: fine){
-    .theme-btn:hover{
-        background: #294766;
-    }
-
-    body.dark-mode .theme-btn:hover{
-        background: #315873;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Discover Brunei</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Discover Brunei</h1>
+        <p>Welcome to Discover Brunei! This website provides<br>you with information about popular
+        attractions, local food,<br>culture, and exciting activities to help you plan your trip.</p>
+    </header>
+    <nav class="navbar">
+        <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="food&culture.html">Food & Culture</a>
+        <a href="travelguide.html">Travel Guide</a>
+        <a href="about&contact.html">About & Contact</a>
+        </div>
+    </nav>
+    <main>
+        <section id="ac">
+            <h2>About & Contact</h2>
+            <div class="cover">
+                <h3>About Brunei</h3>
+                <div class="ac-container">
+                    <div class="ac-box">
+                        <h4>1. History of Brunei</h4>
+                        <p>Discover Brunei's long history as a Malay Sultanate and
+                            how its royal heritage has shaped the country today.</p>
+                    </div>
+
+                    <div class="ac-box">
+                        <h4>2. Royal Heritage</h4>
+                        <p>Learn about Brunei's monarchy and the important role of 
+                            the Sultan in the country's leadership and traditions.</p>
+                    </div>
+
+                    <div class="ac-box">
+                        <h4>3. Malay Islamic Monarchy (MIB)</h4>
+                        <p>Discover Brunei's national philosophy, which represents Malay
+                            culture, Islam and the monarchy.</p>
+                    </div>
+
+                    <div class="ac-box">
+                        <h4>4. National Identity</h4>
+                        <p>Learn about Brunei's national flag, national anthem and 
+                            symbols that represent the country's identity and unity.</p>
+                    </div>
+
+                    <div class="ac-box">
+                        <h4>5. Nature & Environment</h4>
+                        <p>Explore Brunei's tropical rainforests, diverse wildlife and 
+                            natural beauty, which are important parts of its heritage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover">
+            <h3>Contact Information</h3>
+                <div class="ac-container">
+                    <div class="ac-box">
+                        <h4>Phone Number</h4>
+                        <p>+6732382822 / +6732380022</p>
+                        <p>Contact us for further assistance and information.</p>
+                    </div>
+
+                    <div class="ac-box">
+                        <h4>Social Media</h4>
+                        <a href="https://www.tiktok.com/@bruneitourism?is_from_webapp=1&sender_device=pc">
+                            Tiktok
+                        </a>
+                        <a href="https://www.instagram.com/info.bruneitourism?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw==" target="_blank">
+                            Instagram
+                        </a>
+                        <a href="https://www.facebook.com/BruneiTourismOfficial/">
+                            Facebook
+                        </a>
+                        <p>Follow us for travel inspiration, updates and beautiful places to discover in Brunei.</p>
+                    </div>
+
+                    <div class="ac-box">
+                        <h4>Location</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.1223662622187!2d114.94158282398391!3d4.91918730000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3222f51ebf1fda1f%3A0x340a37b8029f929d!2sMinistry%20of%20Primary%20Resources%20%26%20Tourism!5e0!3m2!1sen!2sbn!4v1793869012084!5m2!1sen!2sbn" 
+                        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        <p>Jalan Dewan Majlis, Bandar Seri Begawan BB3913, Brunei Darussalam.</p>
+                    </div>
+                </div>
+            </div>   
+        </section>
+    </main>
+
+    <a href="travelguide.html" class="back-btn">Back</a>
+
+                
+    <footer>
+        <p>&copy; 2026 Discover Brunei. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
