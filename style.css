@@ -39,9 +39,17 @@ section{
     height: 290px;
 }
 
-.small, iframe{
+.small{
     width: 250px;
     height: 140px;
+}
+
+.ac-box iframe{
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0 auto 7px;
+    box-sizing: border-box;
 }
 
 .district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
@@ -199,10 +207,6 @@ p{
     font-size: 16px;
 }
 
-.theme-btn:hover{
-    background: #294766;
-}
-
 /* IMAGES */
 
 img, iframe{
@@ -286,7 +290,7 @@ body.dark-mode iframe{
 }
 
 body.dark-mode footer{
-    background: #07121c;
+    background: #23445c;
     color: #eaf2f8;
 }
 
@@ -296,10 +300,6 @@ body.dark-mode .theme-btn{
     background: #23445c;
     color: white;
     border: 1px solid #49677f;
-}
-
-body.dark-mode .theme-btn:hover{
-    background: #315873;
 }
 
 body.dark-mode .next-btn,
@@ -342,20 +342,21 @@ main img:hover{
 }
 
 /* IMAGE WRAPPER AND CLOSE BUTTON */
-
 .image-wrapper{
     position: relative;
     display: inline-block;
+    width: 90%;
     max-width: 90%;
-    max-height: 85%;
+    max-height: 90vh;
 }
 
 .enlarged-image{
     display: block;
+    width: 100%;
     max-width: 100%;
     max-height: 85vh;
+    height: auto;
     object-fit: contain;
-    border-radius: 10px;
     margin: 0;
 }
 
@@ -386,7 +387,7 @@ main img:hover{
     border: none;
     border-radius: 10px;
     width: 55px;
-    height: 150px;
+    height: 85px;
     box-sizing: border-box;
     padding: 5px 15px;
     font-size: 22px;
@@ -459,7 +460,7 @@ body.dark-mode .top-btn:hover{
     .top-btn{
         font-size: 28px;
         width: 75px;
-        height: 130px;
+        height: 90px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
@@ -508,5 +509,15 @@ body.dark-mode .top-btn:hover{
 
     p{
         font-size: 16px;
+    }
+}
+
+@media (hover: hover) and (pointer: fine){
+    .theme-btn:hover{
+        background: #294766;
+    }
+
+    body.dark-mode .theme-btn:hover{
+        background: #315873;
     }
 }
