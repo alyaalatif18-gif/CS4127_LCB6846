@@ -49,7 +49,6 @@ section{
     height: 200px;
     display: block;
     margin: 0 auto 7px;
-    border: none;
     box-sizing: border-box;
 }
 
@@ -171,7 +170,7 @@ p{
 /* NEXT AND BACK BUTTONS */
 
 .next-btn, .back-btn{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     background: #0a1b2e;
@@ -183,7 +182,7 @@ p{
     border-radius: 12px;
     text-decoration: none;
     text-align: center;
-    margin: 10px auto 15px;
+    margin: 10px 0 15px;
 }
 
 .next-btn:hover, .back-btn:hover{
@@ -210,7 +209,7 @@ p{
 
 /* IMAGES */
 
-img, iframe{ 
+img, iframe{
     border: 1px solid #0a1b2e;
     border-radius: 15px;
     margin: 0 auto 7px;
