@@ -185,6 +185,11 @@ p{
     margin: 10px 0 15px;
 }
 
+.back-btn{
+    align-self: center;
+
+}
+
 .next-btn:hover, .back-btn:hover{
     background: #294766;
 }
@@ -420,7 +425,7 @@ body.dark-mode .top-btn:hover{
     body{
         width: 100%;
         min-width: 700px;
-        zoom: 0.60;
+        zoom: 1;
     }
 
     section{
