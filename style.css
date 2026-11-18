@@ -427,11 +427,15 @@ body.dark-mode .top-btn:hover{
     }
 
     section{
-        width: 620px;
+        width: calc(100% - 20px);
+        max-width: 620px;
+        margin: 10px auto 20px;
     }
 
     .navbar{
-        width: 490px;
+        width: calc(100% - 20px);
+        max-width: 490px;
+        margin: 10px auto;
     }
 
     .navlinks{
@@ -446,7 +450,8 @@ body.dark-mode .top-btn:hover{
     }
 
     .theme-btn{
-        width: 560px;
+        width: calc(100% - 20px);
+        max-width: 560px;
         height: 50px;
         box-sizing: border-box;
         padding: 12px;
