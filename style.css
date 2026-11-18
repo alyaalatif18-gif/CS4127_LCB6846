@@ -427,14 +427,11 @@ body.dark-mode .top-btn:hover{
     }
 
     section{
-        width: calc(100% - 30px);
-        max-width: 620px;
-        box-sizing: border-box;
+        width: 620px;
     }
 
     .navbar{
-        width: calc(100% - 30px);
-        max-width: 490px;
+        width: 490px;
     }
 
     .navlinks{
@@ -457,7 +454,7 @@ body.dark-mode .top-btn:hover{
     }
 
     .next-btn, .back-btn{
-        height: 60px;
+        height: 50px;
         width: calc((490px - 20px) / 3);
     }
 
@@ -465,8 +462,8 @@ body.dark-mode .top-btn:hover{
 
     .top-btn{
         font-size: 28px;
-        width: 90px;
-        height: 110px;
+        width: 75px;
+        height: 90px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
@@ -480,8 +477,8 @@ body.dark-mode .top-btn:hover{
         display: inline-block;
         width: fit-content;
         height: fit-content;
-        max-width: 140vw;
-        max-height: 90vh;
+        max-width: 90vw;
+        max-height: 85vh;
     }
 
     .enlarged-image{
