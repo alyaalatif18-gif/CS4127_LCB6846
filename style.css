@@ -1,5 +1,6 @@
 html, body{
     min-height: 100%;
+    margin: 0;
 }
 
 body{
@@ -13,17 +14,18 @@ body{
 }
 
 main{
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 section{
-    margin: 0 auto 20px;
+    margin: 10px auto 20px;
     border-radius: 15px;
     padding: 15px;
-    background: #0a1b2e; 
+    background: #0a1b2e;
     text-align: center;
     width: 620px;
     height: fit-content;
+    box-sizing: border-box;
     border: 1px solid #0a1b2e;
     color: white;
 }
@@ -37,18 +39,26 @@ section{
     height: 290px;
 }
 
-.small, iframe{
+.small{
     width: 250px;
     height: 140px;
 }
 
+.ac-box iframe{
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0 auto 7px;
+    box-sizing: border-box;
+}
+
 .district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 15px;
     margin: 0 auto 10px;
     padding: 8px;
-    
+    box-sizing: border-box;
 }
 
 .ac-container a{
@@ -95,11 +105,12 @@ section{
     height: fit-content;
     background: #cbd9eb;
     color: #0a1b2e;
-
 }
 
+/* NAVIGATION */
+
 .navbar{
-    margin: 20px auto;
+    margin: 10px auto;
     width: 490px;
 }
 
@@ -110,10 +121,15 @@ section{
 }
 
 .navlinks a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     border: 1px solid #0a1b2e;
     border-radius: 12px;
     padding: 10px;
+    height: 42px;
+    box-sizing: border-box;
     text-align: center;
     background: #0a1b2e;
     color: white;
@@ -122,6 +138,8 @@ section{
 .navlinks a:hover{
     background: #294766;
 }
+
+/* HEADINGS AND TEXT */
 
 h5{
     font-size: 16px;
@@ -149,35 +167,47 @@ p{
     font-size: 15px;
 }
 
+/* NEXT AND BACK BUTTONS */
+
 .next-btn, .back-btn{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background: #0a1b2e;
     color: white;
-    padding: 12px 28px;
+    width: calc((490px - 20px) / 3);
+    height: 42px;
+    box-sizing: border-box;
+    padding: 10px;
     border-radius: 12px;
     text-decoration: none;
-    margin: 10px 0;
-    margin-bottom: 25px;
+    text-align: center;
+    margin: 10px 0 15px;
 }
 
 .next-btn:hover, .back-btn:hover{
     background: #294766;
 }
 
+/* DARK AND LIGHT MODE BUTTON */
+
 .theme-btn{
+    display: inline-block;
+    align-self: center;
+    width: fit-content;
+    height: 42px;
+    box-sizing: border-box;
     background: #0a1b2e;
     color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 10px;
+    border: 1px solid #0a1b2e;
+    padding: 10px;
+    border-radius: 12px;
     cursor: pointer;
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin: 10px auto;
+    font-size: 16px;
 }
 
-.theme-btn:hover{
-    background: #294766;
-}
+/* IMAGES */
 
 img, iframe{
     border: 1px solid #0a1b2e;
@@ -186,15 +216,21 @@ img, iframe{
 }
 
 footer{
+    box-sizing: border-box;
+    width: 100%;
     padding: 18px;
+    margin: 0;
     color: #dce3ec;
     background: #0a1b2e;
 }
+
+/* BUTTON CONTAINER */
 
 .button-container{
     display: flex;
     justify-content: center;
     gap: 12px;
+    margin: 10px auto 30px;
 }
 
 /* DARK MODE COLOURS */
@@ -254,20 +290,24 @@ body.dark-mode iframe{
 }
 
 body.dark-mode footer{
-    background: #07121c;
+    background: #23445c;
     color: #eaf2f8;
 }
 
 /* DARK MODE BUTTONS */
 
-body.dark-mode .theme-btn,
+body.dark-mode .theme-btn{
+    background: #23445c;
+    color: white;
+    border: 1px solid #49677f;
+}
+
 body.dark-mode .next-btn,
 body.dark-mode .back-btn{
     background: #315873;
     color: white;
 }
 
-body.dark-mode .theme-btn:hover,
 body.dark-mode .next-btn:hover,
 body.dark-mode .back-btn:hover{
     background: #496f8a;
@@ -301,25 +341,38 @@ main img:hover{
     display: flex;
 }
 
-.enlarged-image{
+/* IMAGE WRAPPER AND CLOSE BUTTON */
+.image-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 90%;
     max-width: 90%;
-    max-height: 85%;
+    max-height: 90vh;
+}
+
+.enlarged-image{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 85vh;
+    height: auto;
     object-fit: contain;
-    border-radius: 10px;
+    margin: 0;
 }
 
 .close-btn{
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 8px;
+    right: 8px;
     background: #cbd9eb;
     color: #0a1b2e;
     border: none;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 25px;
     width: 40px;
     height: 40px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 /* 3. BACK-TO-TOP BUTTON */
@@ -333,7 +386,10 @@ main img:hover{
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 12px 18px;
+    width: 55px;
+    height: 85px;
+    box-sizing: border-box;
+    padding: 5px 15px;
     font-size: 22px;
     font-family: Arial, sans-serif;
     cursor: pointer;
@@ -357,7 +413,10 @@ body.dark-mode .top-btn:hover{
     background: #dce3ec;
 }
 
+/* MOBILE VIEW */
+
 @media screen and (max-width: 600px){
+
     body{
         width: 100%;
         min-width: 700px;
@@ -378,42 +437,87 @@ body.dark-mode .top-btn:hover{
     }
 
     .navlinks a{
+        height: 50px;
         font-size: 17px;
         padding: 14px 8px;
     }
-    .next-btn, .back-btn{
-        font-size: 18px;
-        padding: 15px 32px;
-    }
 
     .theme-btn{
-        display: inline-block;
-        width: auto;
-        padding: 12px 20px;
-        border-radius: 10px;
+        width: 560px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 12px;
         font-size: 16px;
     }
-    
+
+    .next-btn, .back-btn{
+        height: 50px;
+        width: calc((490px - 20px) / 3);
+    }
+
+    /* BACK-TO-TOP BUTTON - MOBILE */
+
     .top-btn{
         font-size: 28px;
-        padding: 16px 22px;
+        width: 75px;
+        height: 90px;
+        box-sizing: border-box;
+        padding: 5px 15px;
         right: 15px;
         bottom: 15px;
     }
-    
+
+    /* IMAGE CLOSE BUTTON - MOBILE */
+
+    .image-wrapper{
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        max-width: 90vw;
+        max-height: 85vh;
+    }
+
+    .enlarged-image{
+        display: block;
+        max-width: 90vw;
+        max-height: 85vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        margin: 0;
+    }
+
+    .close-btn{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1001;
+    }
+
     footer{
+        box-sizing: border-box;
         width: 100%;
         padding: 25px 15px;
+        margin: 0;
         font-size: 15px;
-        margin-top: auto;
     }
-    
+
     h3{
         font-family: Arial;
     }
-    
+
     p{
         font-size: 16px;
     }
-        
+}
+
+@media (hover: hover) and (pointer: fine){
+    .theme-btn:hover{
+        background: #294766;
+    }
+
+    body.dark-mode .theme-btn:hover{
+        background: #315873;
+    }
 }
