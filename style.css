@@ -420,54 +420,79 @@ body.dark-mode .top-btn:hover{
 /* MOBILE VIEW */
 
 @media screen and (max-width: 600px){
-
-    body{
+    html, body{
         width: 100%;
-        min-width: 700px;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+    
+    body{
+       box-sizing: border-box;
     }
 
     section{
-        width: 620px;
+        width: calc(100%-30px);
+        max-width: 620px;
+        box-sizing: border-box;
     }
 
     .navbar{
-        width: 490px;
+        width: calc(100%-30px);
+        max-width: 490px;
     }
 
     .navlinks{
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 6px;
     }
 
     .navlinks a{
-        height: 50px;
-        font-size: 17px;
-        padding: 14px 8px;
+        height: 42px;
+        font-size: 13px;
+        padding: 8px 4px;
     }
 
     .theme-btn{
-        width: 560px;
-        height: 50px;
-        box-sizing: border-box;
-        padding: 12px;
-        font-size: 16px;
+        width: fit-content;
+        height: 42px;
+        padding: 10px;
+        font-size: 14px;
     }
 
     .next-btn, .back-btn{
-        height: 50px;
-        width: calc((490px - 20px) / 3);
+        height: 42px;
+        width: calc((100vw - 50px) / 3);
+        max-width: 156px;
+    }
+
+    .district-container, .place-container, .experience-container, .fc-container, .ac-container, .guide-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+        padding: 5px;
     }
 
     /* BACK-TO-TOP BUTTON - MOBILE */
 
     .top-btn{
         font-size: 28px;
-        width: 75px;
-        height: 90px;
+        width: 60px;
+        height: 85px;
         box-sizing: border-box;
-        padding: 5px 15px;
+        padding: 5px;
         right: 15px;
         bottom: 15px;
+    }
+
+    /* IMAGES */
+    img, iframe{
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .big, .small{
+        max-width: 100%;
+        height: auto;
     }
 
     /* IMAGE CLOSE BUTTON - MOBILE */
@@ -499,19 +524,20 @@ body.dark-mode .top-btn:hover{
     }
 
     footer{
-        box-sizing: border-box;
         width: 100%;
+        box-sizing: border-box;
         padding: 25px 15px;
         margin: 0;
         font-size: 15px;
     }
 
+    /* HEADINGS AND TEXT */
     h3{
-        font-family: Arial;
+        font-family: Arial, sans-serif;
     }
 
     p{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
