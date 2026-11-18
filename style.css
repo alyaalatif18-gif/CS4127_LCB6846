@@ -453,16 +453,16 @@ body.dark-mode .top-btn:hover{
     }
 
     .next-btn, .back-btn{
-        height: 70px;
+        height: 55px;
         width: calc((490px - 20px) / 3);
     }
 
     /* BACK-TO-TOP BUTTON - MOBILE */
 
     .top-btn{
-        font-size: 40px;
-        width: 80px;
-        height: 130px;
+        font-size: 50px;
+        width: 70px;
+        height: 125px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
