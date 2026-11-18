@@ -423,6 +423,7 @@ body.dark-mode .top-btn:hover{
 
     body{
         width: 100%;
+        min-width: 0;
     }
 
     section{
@@ -460,9 +461,9 @@ body.dark-mode .top-btn:hover{
     /* BACK-TO-TOP BUTTON - MOBILE */
 
     .top-btn{
-        font-size: 50px;
-        width: 70px;
-        height: 125px;
+        font-size: 32px;
+        width: 90px;
+        height: 105px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
@@ -482,7 +483,7 @@ body.dark-mode .top-btn:hover{
     }
 
     p{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
