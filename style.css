@@ -423,19 +423,15 @@ body.dark-mode .top-btn:hover{
 
     body{
         width: 100%;
-        min-width: 10px;
+        min-width: 0;
     }
 
     section{
-        width: calc(100% - 20px);
-        max-width: 620px;
-        margin: 10px auto 20px;
+        width: 620px;
     }
 
     .navbar{
-        width: calc(100% - 20px);
-        max-width: 490px;
-        margin: 10px auto;
+        width: 490px;
     }
 
     .navlinks{
@@ -450,8 +446,7 @@ body.dark-mode .top-btn:hover{
     }
 
     .theme-btn{
-        width: calc(100% - 20px);
-        max-width: 560px;
+        width: 560px;
         height: 50px;
         box-sizing: border-box;
         padding: 12px;
@@ -466,7 +461,7 @@ body.dark-mode .top-btn:hover{
     /* BACK-TO-TOP BUTTON - MOBILE */
 
     .top-btn{
-        font-size: 35px;
+        font-size: 32px;
         width: 90px;
         height: 105px;
         box-sizing: border-box;
