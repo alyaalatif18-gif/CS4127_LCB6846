@@ -423,7 +423,7 @@ body.dark-mode .top-btn:hover{
 
     body{
         width: 100%;
-        min-width: 700px;
+        min-width: 0;
     }
 
     section{
