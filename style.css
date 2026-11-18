@@ -424,7 +424,6 @@ body.dark-mode .top-btn:hover{
     body{
         width: 100%;
         min-width: 700px;
-        zoom: 0.60;
     }
 
     section{
@@ -512,7 +511,7 @@ body.dark-mode .top-btn:hover{
     }
 
     p{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
