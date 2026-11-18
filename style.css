@@ -420,12 +420,15 @@ body.dark-mode .top-btn:hover{
 /* MOBILE VIEW */
 
 @media screen and (max-width: 600px){
-
-    body{
+    html, body{
         width: 100%;
-        min-width: 700px;
+        min-width: 0;
+        overflow-x: hidden;
     }
-
+    body{
+        box-sizing: border-box;
+    }
+    
     section{
         width: 620px;
     }
@@ -454,16 +457,16 @@ body.dark-mode .top-btn:hover{
     }
 
     .next-btn, .back-btn{
-        height: 55px;
+        height: 70px;
         width: calc((490px - 20px) / 3);
     }
 
     /* BACK-TO-TOP BUTTON - MOBILE */
 
     .top-btn{
-        font-size: 32px;
+        font-size: 40px;
         width: 90px;
-        height: 105px;
+        height: 120px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
@@ -483,9 +486,12 @@ body.dark-mode .top-btn:hover{
     }
 
     p{
+        font-size: 16px;
+    }
+    
+    header p, .sens p{
         font-size: 14px;
     }
-}
 
 @media (hover: hover) and (pointer: fine){
     .theme-btn:hover{
