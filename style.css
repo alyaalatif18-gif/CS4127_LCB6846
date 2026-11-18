@@ -454,48 +454,20 @@ body.dark-mode .top-btn:hover{
     }
 
     .next-btn, .back-btn{
-        height: 50px;
+        height: 55px;
         width: calc((490px - 20px) / 3);
     }
 
     /* BACK-TO-TOP BUTTON - MOBILE */
 
     .top-btn{
-        font-size: 28px;
-        width: 75px;
-        height: 90px;
+        font-size: 32px;
+        width: 90px;
+        height: 105px;
         box-sizing: border-box;
         padding: 5px 15px;
         right: 15px;
         bottom: 15px;
-    }
-
-    /* IMAGE CLOSE BUTTON - MOBILE */
-
-    .image-wrapper{
-        position: relative;
-        display: inline-block;
-        width: fit-content;
-        height: fit-content;
-        max-width: 90vw;
-        max-height: 85vh;
-    }
-
-    .enlarged-image{
-        display: block;
-        max-width: 90vw;
-        max-height: 85vh;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        margin: 0;
-    }
-
-    .close-btn{
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        z-index: 1001;
     }
 
     footer{
@@ -511,7 +483,7 @@ body.dark-mode .top-btn:hover{
     }
 
     p{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
