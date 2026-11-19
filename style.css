@@ -420,8 +420,19 @@ body.dark-mode .top-btn:hover{
 /* MOBILE VIEW */
 
 @media screen and (max-width: 600px){
+    body{
+        align-items: center;
+    }
+
+    main{
+        flex: 1 0 auto;
+        width: 100%;
+    }
+ 
     section{
-        width: 620px;
+        margin: 10px auto 20px;
+        width: 95%
+        max-width: 620px;
     }
 
     .navbar{
